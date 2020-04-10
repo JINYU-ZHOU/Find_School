@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    
+  </view>
+  
+  <view class="people">
+      <view class="geren">
+        <text class="geren-text">个人信息</text>
+      </view>
+      <view class="fuhao">
+        <text class="fuhao-text">></text>
+      </view>     
+    </view>
+
+     <view class="people-else">
+      <view class="geren-else">
+        <text class="geren-text">我的钱包</text>
+      </view>
+      <view class="fuhao-else">
+        <text class="fuhao-text">></text>
+      </view>     
+    </view>
+
+     <view class="people-else">
+      <view class="geren-else">
+        <text class="geren-text">我的关注</text>
+      </view>
+      <view class="fuhao-else">
+        <text class="fuhao-text">></text>
+      </view>     
+    </view>
+
+     <view class="people-else">
+      <view class="geren-else">
+        <text class="geren-text">历史记录</text>
+      </view>
+      <view class="fuhao-else">
+        <text class="fuhao-text">></text>
+      </view>     
+    </view>
+  <!-- <view class="pay">
+          <view>我的钱包</view>
+    </view>
+     <view class="focation">
+      <view>我的关注</view>
+    </view>
+
+     <view class="history">
+      <view>历史记录</view>
+
+    </view>
+     -->
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+ 
+</view>

@@ -1,0 +1,97 @@
+/* pages/mysclool/myscool.wxss */
+.search{
+  width: 100%;
+  height: 80rpx;
+  margin-top: 2rpx;
+  /* margin-bottom: 10rpx; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #bad;
+  /* padding-left: 180rpx; */
+}
+.search_item{
+  width: 90%;
+  margin: 0rpx 30rpx 20rpx 40rpx ;
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #eee;
+  opacity:0.5;
+}
+.swiper-center{
+  width: 100%;
+  height: 450rpx;
+}
+.swiper-view{
+  width: 100%;
+  height: 450rpx;   
+}
+.select{
+  width: 100%;
+  height: 180rpx;
+  margin-top: 16rpx;
+  display: flex;
+  flex-direction: row;
+  background-color:white;
+
+}
+.select-view{
+  width: 200rpx;
+  height: 150rpx;
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+  background-color:white;
+  margin-left: 45rpx;
+}
+.select-text{
+  align-self: center;
+}
+.select-image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  /* margin-left: 85rpx; */
+  margin-top: 30rpx;
+  align-self: center; 
+  border-width: 20px;
+  background-color: rgb(247, 241, 241);
+}
+.show{
+  margin-top: 16rpx;
+  display: flex;
+  flex-direction: column;
+  background-color:white;
+  
+}
+.show_daohang{
+  width: 100%;
+  height: 60rpx;
+  padding-left: 45rpx;
+  background-color:white;
+}
+.list{
+  margin-top: 2rpx;
+}
+.list_topic{
+  /* background-color: #bad; */
+  margin-top: 2rpx;
+  /* margin-left: 55rpx; */
+  padding-left: 45rpx;
+  width: 100%;
+  height: 80rpx;
+  background-color: rgb(224, 203, 224);
+  padding-top: 28rpx;
+}
+.input_coding{
+  height: 60rpx;
+}
+.button{
+   height: 65rpx;
+   width: 10rpx;
+   display: flex;
+   flex-direction: row;
+   
+}

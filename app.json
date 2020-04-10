@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/New_student/New_student",
+    "pages/School_find/School_find",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/index1/index1",
+    "pages/test/test"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": " ",
+    "navigationBarTextStyle": "black"
+  },
+
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#754775",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/首页.png",
+        "iconPath": "images/首页1.png",
+        "pagePath": "pages/New_student/New_student",
+        "text": "新生指引"
+      },
+        {
+          "selectedIconPath": "images/find.png",
+          "iconPath": "images/find1.png",
+          "pagePath": "pages/School_find/School_find",
+          "text": "校园指路"
+        },
+      {
+        "selectedIconPath": "images/user.png",
+        "iconPath": "images/user1.png",
+        "pagePath": "pages/index/index",
+        "text": "我的"
+      }
+    
+    ]
+  },
+  
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  },
+  
+  "plugins": {
+    "chooseLocation": {
+      "version": "1.0.2",
+      "provider": "wx76a9a06e5b4e693e"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

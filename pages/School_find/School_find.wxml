@@ -1,0 +1,57 @@
+<!--pages/mysclool/myscool.wxml-->
+<view class="container">
+  <view class="search">
+    <view class="search_item">
+      <image style="width:40rpx; height:40rpx;margin-left:15rpx;" src="/images/find1.png"></image>
+        <input 
+        class="input_coding" 
+        placeholder-style="color:write" 
+        bindinput="palce_set"
+        value='{{palce}}' 
+        confirm-type="search"
+        placeholder='搜你所想' 
+        type='text' maxlength='11'/>
+    </view>
+  </view>
+  <view class="swiper-center">
+    <swiper class="swiper-view"
+            indicator-dots="true"autoplay="true" 
+            interval="2000"  circular="true"
+            indicator-color="#ccc" indicator-active-color="#fff">
+      <swiper-item>
+        <image src="/images/1.jpg" style='width:100%'></image>
+      </swiper-item>
+      <swiper-item >
+        <image src="/images/2.jpg" style='width:100%'></image>
+      </swiper-item>
+      <swiper-item >
+          <image src="/images/3.jpg" style='width:100%'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="select">
+    <view class="select-view"><image src="/images/s1.png" class="select-image"></image><text class="select-text">东区</text> </view>        <view class="select-view"><image src="/images/s2.png" class="select-image"></image><text class="select-text">新区</text> </view>
+    <view class="select-view"><image src="/images/s3.png" class="select-image"></image><text class="select-text">西区</text> </view>
+  </view>
+  <view class="show">
+    <view class="show_daohang">实时更新热搜地名</view>
+    <view class="list">
+    <block wx:for="{{palce_list}}" wx:for-index="idx">
+      <view class="list_topic">  
+        <text space="ensp" >  {{idx+1}}   {{item.name}}</text>
+      </view>
+    </block>
+    </view>
+  </view>
+  
+</view>
+
+
+
+
+
+
+
+
+
+

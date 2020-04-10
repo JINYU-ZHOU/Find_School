@@ -1,0 +1,14 @@
+<!--pages/mysclool/myscool.wxml-->
+<view class="container">
+<image src="/images/new.jpg" style="width:100%;height:380rpx;"></image>
+<view>根据专业找到迎新点</view>
+
+
+
+
+
+
+
+
+
+</view>
