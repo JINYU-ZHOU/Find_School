@@ -5,11 +5,12 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
+    var code
     // 登录
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        code = res.code
       }
     })
     // 获取用户信息
@@ -26,7 +27,35 @@ App({
               // 所以此处加入 callback 以防止这种情况
               if (this.userInfoReadyCallback) {
                 this.userInfoReadyCallback(res)
+                //用户名storage
+                wx.setStorageSync('username', res.userInfo.nickName)
               }
+              //用户信息后台登录注册并设置cookie
+              wx.request({
+                url: 'https://spergol.com/login',
+                method: 'POST',
+                header: {
+                  'content-Type': 'application/x-www-form-urlencoded;charset=utf-8',
+                },
+                data: {
+                  code: code,
+                  username: res.userInfo.nickName,
+                  //这里设置一下登录弹窗，选择所在专业
+                  classes: '计算机与信息工程学院',
+                  //身份默认学生
+                  identify: '1',
+                  //授权码，仅在老师注册时生效
+                  password: '123456'
+
+                },
+                success: (a) => {
+                  console.log(a.data)
+                  if (a && a.header && a.header['Set-Cookie']) {
+                    wx.setStorageSync('cookieKey', a.header['Set-Cookie']);//保存Cookie到Storage
+
+                  }
+                }
+              })
             }
           })
         }
