@@ -1,5 +1,8 @@
 # University-WeiXin
 连接后台需要统一一下appid：wxa1b202ae01b354d3
+后台接口均经过测试，访问无异常
+所有以list为返回值的接口，其json标签名均为接口名
+所有返回是，否等判断信息的接口，均为1为成功，0为失败
 后台接口信息：
 后台接口域名：https://spergol
 
@@ -8,6 +11,7 @@
 必传参数：code（用户登录产生的res.code），username（用户名），identify（身份，1学生，2老师）,classes(院系)
 可选参数：password(授权码，固定123456，老师注册必传)
 返回值：用户信息字符串及提示
+json数据：username，classes，identity
 
 
 **用户信息修改：/changeUser
@@ -42,6 +46,7 @@
 **地点热词查询：/selMaps
 必传参数：words
 返回值：确定地点
+json数据：location
 
 
 **热词模糊查询：/selWords
