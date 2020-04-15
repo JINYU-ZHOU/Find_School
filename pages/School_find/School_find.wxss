@@ -10,6 +10,16 @@
   background-color: #bad;
   /* padding-left: 180rpx; */
 }
+
+.search_list{
+  width: 100%;
+  height: 180rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .search_item{
   width: 90%;
   margin: 0rpx 30rpx 20rpx 40rpx ;
@@ -20,9 +30,11 @@
   background-color: #eee;
   opacity:0.5;
 }
+
 .swiper-center{
   width: 100%;
   height: 450rpx;
+  z-index: 0;
 }
 .swiper-view{
   width: 100%;
@@ -64,7 +76,6 @@
   display: flex;
   flex-direction: column;
   background-color:white;
-  
 }
 .show_daohang{
   width: 100%;
