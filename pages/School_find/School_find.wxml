@@ -8,9 +8,11 @@
 	</view>
 
 	<view class="swiper-center">
+	<!--
 		<view  class="search_list" wx:for="{{palce_list_serrch}}" wx:for-index="idx">
 		  <text class="tx">{{item.words}}</text>	
 		</view>
+	-->
 		<swiper class="swiper-view"  indicator-dots="true" autoplay="true" interval="2000" circular="true" indicator-color="#ccc" indicator-active-color="#fff">
 			<swiper-item>
 				<image src="/images/1.jpg" style='width:100%'></image>
@@ -41,7 +43,8 @@
 		<view class="list">
 			<block wx:for="{{palce_list}}" wx:for-index="idx">
 				<view class="list_topic">
-					<text space="ensp" > {{idx+1}} {{item.words}}</text>
+					<!--<text space="ensp" > {{idx+1}} {{item.words}}</text>-->
+					<text space="ensp" > {{idx+1}} {{item.name}}</text>
 				</view>
 			</block>
 		</view>

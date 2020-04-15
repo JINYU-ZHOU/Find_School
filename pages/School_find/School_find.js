@@ -15,12 +15,12 @@ Page({
     palce_list_serrch: [],
     checked: false,
     palce_list: [
-      // {name: "图书馆",},
-      // {words: "大不同超市",}, 
-      // {name: "财务处",},
-      // {name: "校园卡管理中心",},
-      // {name: "计算机学院",},
-      // {name: "勤学楼",},
+      {name: "图书馆",},
+      {name: "大不同超市",}, 
+      {name: "财务处",},
+      {name: "校园卡管理中心",},
+      {name: "计算机学院",},
+      {name: "勤学楼",},
     ],
   },
 
@@ -36,9 +36,9 @@ Page({
       palce: e.detail.value
     })
 
-    if (this.data.palce.length != 0) {
-      this.getName(e);
-    }
+    // if (this.data.palce.length != 0) {
+    //   this.getName(e);
+    // }
 
 
     console.log("====palce==", this.data.palce)
@@ -50,37 +50,33 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-<<<<<<< HEAD
-   
-=======
-    this.getWord();
+    // this.getWord();
   },
 
-  async getWord() {
-    let res = await $get("/selhot");
-    console.log(res)
-    this.setData({
-      palce_list: res.selhot
-    })
-  },
+  // async getWord() {
+  //   let res = await $get("/selhot");
+  //   console.log(res)
+  //   this.setData({
+  //     palce_list: res.selhot
+  //   })
+  // },
 
-  async getName(e) {
-    let res = await $getsearch("/selWords", {
-      name: e.detail.value
-    });
-    console.log(res.selwords)
+  // async getName(e) {
+  //   let res = await $getsearch("/selWords", {
+  //     name: e.detail.value
+  //   });
+  //   console.log(res.selwords)
 
-    if(res.selwords){
-      !this.data.checked;
-    }
+  //   if(res.selwords){
+  //     !this.data.checked;
+  //   }
 
-    this.setData({
-      palce: e.detail.value,
-      palce_list_serrch: res.selwords
-    })
->>>>>>> b7eb05d42035c8a8047625ab60882e15b9206ce3
+  //   this.setData({
+  //     palce: e.detail.value,
+  //     palce_list_serrch: res.selwords
+  //   })
 
-  },
+  // },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -93,7 +89,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-      
+
   },
 
   /**

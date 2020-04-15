@@ -13,10 +13,9 @@
       <view class="geren">
         <text class="geren-text">索引记录</text>
       </view>
-
-     <view class="fuhao-else">
+      <view class="fuhao">
         <text class="fuhao-text">></text>
-      </view>       
+      </view>     
     </view>
 
      <view class="people-else">
