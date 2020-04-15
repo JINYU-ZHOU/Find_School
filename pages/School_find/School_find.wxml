@@ -6,12 +6,12 @@
 			<input class="input_coding" placeholder-style="color:write" bindinput="palce_set" value='{{palce}}' confirm-type="search" placeholder='搜你所想' type='text' maxlength='11' />
 		</view>
 	</view>
-  <view style="opacity:{{0.5}}" class="search_list" wx:for="{{palce_list_serrch}}" wx:for-index="idx">
-    {{item.words}}
-	</view>
 
-	<view class="swiper-center" >
-		<swiper class="swiper-view" indicator-dots="true" autoplay="true" interval="2000" circular="true" indicator-color="#ccc" indicator-active-color="#fff">
+	<view class="swiper-center">
+		<view  class="search_list" wx:for="{{palce_list_serrch}}" wx:for-index="idx">
+		  <text class="tx">{{item.words}}</text>	
+		</view>
+		<swiper class="swiper-view"  indicator-dots="true" autoplay="true" interval="2000" circular="true" indicator-color="#ccc" indicator-active-color="#fff">
 			<swiper-item>
 				<image src="/images/1.jpg" style='width:100%'></image>
 			</swiper-item>
@@ -35,7 +35,7 @@
 			<image src="/images/s3.png" class="select-image"></image><text class="select-text">西区</text>
 		</view>
 	</view>.
-  
+
 	<view class="show">
 		<view class="show_daohang">实时更新热搜地名</view>
 		<view class="list">

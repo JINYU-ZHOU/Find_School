@@ -13,6 +13,7 @@ Page({
   data: {
     palce: "",
     palce_list_serrch: [],
+    checked: false,
     palce_list: [
       // {name: "图书馆",},
       // {words: "大不同超市",}, 
@@ -34,12 +35,12 @@ Page({
     this.setData({
       palce: e.detail.value
     })
-    
+
     if (this.data.palce.length != 0) {
       this.getName(e);
     }
-    
-    
+
+
     console.log("====palce==", this.data.palce)
 
   },
@@ -65,12 +66,16 @@ Page({
       name: e.detail.value
     });
     console.log(res.selwords)
-    
-      this.setData({
-        palce: e.detail.value,
-        palce_list_serrch: res.selwords
-      })
-    
+
+    if(res.selwords){
+      !this.data.checked;
+    }
+
+    this.setData({
+      palce: e.detail.value,
+      palce_list_serrch: res.selwords
+    })
+
   },
 
   /**
