@@ -4,10 +4,10 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+
   },
   //事件处理函数
   bindViewTap: function() {
@@ -26,6 +26,7 @@ Page({
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {
         this.setData({
+          title: options.title,
           userInfo: res.userInfo,
           hasUserInfo: true
         })
@@ -42,6 +43,7 @@ Page({
         }
       })
     }
+    
   },
   getUserInfo: function(e) {
     console.log(e)
