@@ -10,6 +10,21 @@
   background-color: #bad;
   /* padding-left: 180rpx; */
 }
+
+.search_list{
+  width: 100%;
+  align-items: center;
+  opacity:0.8;
+  position: relative;
+  z-index: 1;
+}
+
+.search_list .tx{
+  height: 20px;
+  position: relative;
+  z-index: 1;
+}
+
 .search_item{
   width: 90%;
   margin: 0rpx 30rpx 20rpx 40rpx ;
@@ -20,13 +35,17 @@
   background-color: #eee;
   opacity:0.5;
 }
+
 .swiper-center{
   width: 100%;
   height: 450rpx;
+  z-index: 0;
 }
 .swiper-view{
   width: 100%;
-  height: 450rpx;   
+  height: 450rpx;
+  position: relative;
+  z-index: -1; 
 }
 .select{
   width: 100%;
@@ -64,7 +83,6 @@
   display: flex;
   flex-direction: column;
   background-color:white;
-  
 }
 .show_daohang{
   width: 100%;

@@ -1,27 +1,26 @@
 // pages/mysclool/myscool.js
+
+import {
+  $get
+} from '../../utils/requestbasic.js';
+
+import {
+  $getsearch
+} from '../../utils/requestsearch.js';
+
+
 Page({
   data: {
     palce: "",
+    palce_list_serrch: [],
+    checked: false,
     palce_list: [
-      {
-        name: "图书馆",
-      },
-      {
-        name: "大不同超市",
-      }, 
-      {
-        name: "财务处",
-      },
-      {
-        name: "校园卡管理中心",
-      },
-      {
-        name: "计算机学院",
-      },
-      {
-        name: "勤学楼",
-      },
-
+      // {name: "图书馆",},
+      // {words: "大不同超市",}, 
+      // {name: "财务处",},
+      // {name: "校园卡管理中心",},
+      // {name: "计算机学院",},
+      // {name: "勤学楼",},
     ],
   },
 
@@ -29,26 +28,57 @@ Page({
    * 页面的初始数据
    */
 
-  palce_set: function (res) {
+  palce_set: function (e) {
 
-    console.log("====对象======", res)
+    console.log("====对象======", e)
 
     this.setData({
-
-      palce: res.detail.value
-
+      palce: e.detail.value
     })
+
+    if (this.data.palce.length != 0) {
+      this.getName(e);
+    }
+
 
     console.log("====palce==", this.data.palce)
 
   },
- 
+
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+<<<<<<< HEAD
    
+=======
+    this.getWord();
+  },
+
+  async getWord() {
+    let res = await $get("/selhot");
+    console.log(res)
+    this.setData({
+      palce_list: res.selhot
+    })
+  },
+
+  async getName(e) {
+    let res = await $getsearch("/selWords", {
+      name: e.detail.value
+    });
+    console.log(res.selwords)
+
+    if(res.selwords){
+      !this.data.checked;
+    }
+
+    this.setData({
+      palce: e.detail.value,
+      palce_list_serrch: res.selwords
+    })
+>>>>>>> b7eb05d42035c8a8047625ab60882e15b9206ce3
 
   },
 
