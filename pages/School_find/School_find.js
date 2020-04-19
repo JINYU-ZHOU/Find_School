@@ -35,7 +35,7 @@ Page({
     this.setData({
       palce: e.detail.value
     })
-
+//这些注释掉的代码都是我加的，现在的程序和我从仓库拷贝下来的代码没区别
     // if (this.data.palce.length != 0) {
     //   this.getName(e);
     // }

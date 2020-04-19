@@ -1,10 +1,11 @@
 {
   "pages": [
     "pages/New_student/New_student",
-    "pages/School_find/School_find",
+    
     "pages/index/index",
     "pages/logs/logs",
     "pages/index1/index1",
+    "pages/School_find/School_find",
     "pages/test/test"
 
   ],

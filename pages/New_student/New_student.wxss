@@ -1,1 +1,115 @@
 /* pages/mysclool/myscool.wxss */
+
+.search{
+  width: 100%;
+  height: 80rpx;
+  margin-top: 2rpx;
+  /* margin-bottom: 10rpx; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color:rgb(221, 198, 235);
+  /* padding-left: 180rpx; */
+}
+.search_item{
+  width: 100%;
+  margin: 0rpx 14rpx ;
+  padding-top: 4rpx; 
+  padding-left: 80rpx;
+  /* height: 59rpx; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color:  #eee;
+  opacity:0.5;
+}
+.input_coding{
+  height: 60rpx;
+  margin-top: 10rpx;
+  margin-left: 39rpx;
+ 
+}
+.select-profession{
+   /* margin-top: 1rpx; */
+    background-color: rgb(221, 198, 235);/* 图片背景颜色 */
+   /* background-color: #bad; */
+    height: 70rpx;
+    padding-left: 20rpx;
+    padding-top: 40rpx;
+    /* margin-top: 6rpx; */
+   
+}
+.select{
+  width: 100%;
+  height: 210rpx;
+  margin-top:14rpx;
+  display: flex;
+  flex-direction: row;
+  background-color:white;
+
+}
+.select-view{
+  width: 100%;
+  height: 200rpx;
+  /* margin-top: 10rpx; */
+  display: flex;
+  flex-direction: column;
+  background-color:white;
+  margin-left: 5rpx;
+}
+.select-view-bottom{
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin-top: 30rpx;
+}
+.select-view-text{
+  margin-left: 50rpx;
+  background-color: rgb(209, 203, 203);
+  height: 50rpx;
+
+}
+.select-text{
+  align-self: center;
+ 
+
+    /* margin-left: 40rpx; */
+}
+.select-image-icon{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 5%;
+  /* margin-left: 85rpx; */
+  /* margin-top: 30rpx; */
+  align-self: center; 
+  /* margin-left: 40rpx; */
+  border-width: 20px;
+  background-color: rgb(252, 243, 253);
+}
+.select-image{
+  width: 95rpx;
+  height: 95rpx;
+  border-radius: 50%;
+  /* margin-left: 85rpx; */
+  margin-top: 20rpx;
+  align-self: center; 
+  /* margin-left: 40rpx; */
+  background-color: rgb(252, 243, 253);
+}
+.show{
+  margin-top: 16rpx;
+  display: flex;
+  flex-direction: column;
+  background-color:white;
+}
+.show_daohang{
+  width: 100%;
+  height: 60rpx;
+  padding-left: 45rpx;
+  background-color:white;
+}
+.show-detail{
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  background-color: rgb(221, 198, 235);
+}
