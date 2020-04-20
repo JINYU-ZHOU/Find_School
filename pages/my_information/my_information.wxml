@@ -1,0 +1,21 @@
+<view>我的信息修改</view>
+	<view class="cu-form-group margin-top">
+		<view class="title">身份</view>
+		<picker bindchange="PickerChange" value="{{index_shenfen}}" range="{{picker}}">
+			<view class="picker">
+				{{index_shenfen?picker[index_shenfen]:'请选择'}}
+			</view>
+		</picker>
+	</view>
+  	<view class="cu-form-group margin-top">
+		<view class="title">所属院系</view>
+		<picker bindchange="PickerChange1" value="{{index_xueyuan}}" range="{{picker1}}">
+			<view class="picker">
+				{{index_xueyuan?picker1[index_xueyuan]:'请选择'}}
+			</view>
+		</picker>
+	</view>
+  <view class="cu-bar btn-group">
+    <!-- <button class="cu-btn bg-green shadow-blur round lg">保存</button> -->
+    <button class="cu-btn bg-blue shadow-blur round">提交</button>
+  </view>

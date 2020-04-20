@@ -1,0 +1,11 @@
+我的笔记
+<view class="cu-bar input">
+    <view class="action">
+      <text class="cuIcon-sound text-grey"></text>
+    </view>
+    <input class="solid-bottom" focus="{{false}}" maxlength="300" cursor-spacing="10"></input>
+    <view class="action">
+      <text class="cuIcon-emojifill text-grey"></text>
+    </view>
+    <button class="cu-btn bg-green shadow-blur">发送</button>
+  </view>

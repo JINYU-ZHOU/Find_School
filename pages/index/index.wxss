@@ -14,50 +14,46 @@
   align-items: center;
   background-color: white;
   width: 100%;
-  height: 150rpx;
+  height: 160rpx;
   margin-top: 8rpx;
   justify-content: space-between;
-}
-.geren{
-   width: 70%;
-   height: 150rpx;
-   padding-top: 100rpx;
-   padding-left: 40rpx;
-}
-.fuhao{
-
-   width: 30%;
-   height: 150rpx;
-   text-align: right;
-   padding-top: 100rpx;
-   padding-right: 40rpx;
 }
 .people-else{
   display: flex;
   flex-direction: row;
   align-items: center;
   background-color: white;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
   width: 100%;
   height: 100rpx;
   margin-top: 17rpx;
   margin-bottom: 17rpx;
   justify-content: space-between;
 }
-.geren-else{
-   width: 70%;
-   height: 100rpx;
-   padding-top: 50rpx;
-   padding-left: 40rpx;
+.serch{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 100rpx;
+  margin-top: 8rpx;
+  justify-content: space-between;
 }
-.fuhao-else{
-
-   width: 30%;
-   height: 100rpx;
-   text-align: right;
-   padding-top: 50rpx;
-   padding-right: 40rpx;
+.serch-else{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  width: 100%;
+  height: 100rpx;
+  margin-top: 17rpx;
+  margin-bottom: 17rpx;
+  justify-content: space-between;
 }
-
 
 .userinfo-avatar {
   width: 128rpx;
@@ -73,4 +69,10 @@
 
 .usermotto {
   margin-top: 200px;
+}
+.navigator-hover {
+  color:rgb(207, 204, 204);
+}
+.other-navigator-hover {
+  color:red;
 }

@@ -15,7 +15,7 @@
   width: 100%;
   margin: 0rpx 14rpx ;
   padding-top: 4rpx; 
-  padding-left: 80rpx;
+  padding-left: 160rpx;
   /* height: 59rpx; */
   display: flex;
   flex-direction: row;
@@ -26,7 +26,7 @@
 .input_coding{
   height: 60rpx;
   margin-top: 10rpx;
-  margin-left: 39rpx;
+  margin-left: 28rpx;
  
 }
 .select-profession{
@@ -109,7 +109,8 @@
   background-color:white;
 }
 .show-detail{
+  height: 800rpx;
   margin-left: 25rpx;
   margin-right: 25rpx;
-  background-color: rgb(221, 198, 235);
+  background-color: #eee;
 }

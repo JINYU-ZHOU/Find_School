@@ -6,25 +6,24 @@
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
-    
   </view>
-  
   <view class="people">
-      <view class="geren">
-        <text class="geren-text">索引记录</text>
-      </view>
-      <view class="fuhao">
-        <text class="fuhao-text">></text>
-      </view>     
-    </view>
-
-     <view class="people-else">
-      <view class="geren-else">
-        <text class="geren-text">我的笔记</text>
-      </view>
-      <view class="fuhao-else">
-        <text class="fuhao-text">></text>
-      </view>     
-    </view>
+      <navigator class="people-else" url="/pages/my_information/my_information" hover-class="navigator-hover">
+        <text>个人信息</text>
+        <text>></text>
+    </navigator>
+  </view>  
+  <view class="serch">
+      <navigator class="serch-else" url="/pages/history/history" hover-class="navigator-hover">
+        <text>索引记录</text>
+        <text>></text>
+    </navigator>
+  </view>  
+    <view class="serch">
+      <navigator class="serch-else" url="/pages/notes/notes" hover-class="navigator-hover">
+        <text>我的笔记</text>
+        <text>></text>
+    </navigator>
+  </view>  
  
 </view>

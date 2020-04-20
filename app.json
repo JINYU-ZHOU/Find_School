@@ -1,12 +1,15 @@
 {
   "pages": [
-    "pages/New_student/New_student",
-    
     "pages/index/index",
+    "pages/New_student/New_student",
+    "pages/my_information/my_information",
+    "pages/history/history",
+    "pages/notes/notes",
     "pages/logs/logs",
     "pages/index1/index1",
     "pages/School_find/School_find",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/login/login"
 
   ],
   "window": {
