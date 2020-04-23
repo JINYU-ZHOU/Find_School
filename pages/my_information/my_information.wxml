@@ -11,7 +11,7 @@
 		<view class="title">所属院系</view>
 		<picker bindchange="PickerChange1" value="{{index_xueyuan}}" range="{{picker1}}">
 			<view class="picker">
-				{{index_xueyuan?picker1[index_xueyuan]:'请选择'}}
+				{{index_xueyuan?picker1.name[index_xueyuan]:'请选择'}}
 			</view>
 		</picker>
 	</view>

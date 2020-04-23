@@ -69,6 +69,13 @@
 					"id": -1,
 					"name": "pages/School_find/School_find",
 					"pathName": "pages/School_find/School_find",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my_information/my_information",
+					"pathName": "pages/my_information/my_information",
 					"scene": null
 				}
 			]
