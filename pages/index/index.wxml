@@ -8,19 +8,19 @@
     </block>
   </view>
   <view class="people">
-      <navigator class="people-else" url="/pages/my_information/my_information" hover-class="navigator-hover">
+      <navigator class="people-else" url="/pages/PEPLO/my_information/my_information" hover-class="navigator-hover">
         <text>个人信息</text>
         <text>></text>
     </navigator>
   </view>  
   <view class="serch">
-      <navigator class="serch-else" url="/pages/history/history" hover-class="navigator-hover">
+      <navigator class="serch-else" url="/pages/PEPLO/history/history" hover-class="navigator-hover">
         <text>索引记录</text>
         <text>></text>
     </navigator>
   </view>  
     <view class="serch">
-      <navigator class="serch-else" url="/pages/notes/notes" hover-class="navigator-hover">
+      <navigator class="serch-else" url="/pages/PEPLO/notes/notes" hover-class="navigator-hover">
         <text>我的笔记</text>
         <text>></text>
     </navigator>

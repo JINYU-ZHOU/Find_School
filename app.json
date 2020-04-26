@@ -1,12 +1,13 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/New_student/New_student",
-    "pages/my_information/my_information",
-    "pages/history/history",
-    "pages/notes/notes",
-    "pages/logs/logs",
-    "pages/index1/index1",
+    "pages/New_student/get/get",
+    "pages/New_student/qiandao/qiandao",
+    "pages/New_student/zhuce/zhuce",
+    "pages/index/index",
+    "pages/PEPLO/my_information/my_information",
+    "pages/PEPLO/history/history",
+    "pages/PEPLO/notes/notes",
     "pages/School_find/School_find",
     "pages/test/test",
     "pages/login/login"
@@ -51,7 +52,9 @@
       "desc": "你的位置信息将用于小程序定位"
     }
   },
-  
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
   "plugins": {
     "chooseLocation": {
       "version": "1.0.2",

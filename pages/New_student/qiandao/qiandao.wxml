@@ -1,0 +1,27 @@
+<!--pages/mysclool/myscool.wxml-->
+<view class="container">
+<view class="search">
+		<view class="search_item">
+    <image style="width:44rpx; height:45rpx;margin-left:8rpx;" src="/images/location.png"></image>
+        <view class="input_coding" space="ensp">
+        
+        [ {{profession}} ]</view>
+        </view>
+		
+	</view>
+
+<!-- <view class="select-profession"><view class="select-profession-text" space="ensp">您所在的学院： [ {{profession}} ]</view></view> -->
+<image src="/images/new.jpg" style="width:100%;height:540rpx;"></image>
+    
+	<view class="show">
+		<view class="show_daohang">详情数据</view>
+    <view class="show-detail">qiaodao</view>
+  </view>
+
+
+
+
+
+
+
+</view>

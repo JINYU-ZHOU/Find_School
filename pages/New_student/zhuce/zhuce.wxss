@@ -46,7 +46,6 @@
   display: flex;
   flex-direction: row;
   background-color:white;
-  padding-top: 10rpx;
 
 }
 .select-view{
@@ -77,8 +76,8 @@
     /* margin-left: 40rpx; */
 }
 .select-image-icon{
-  width: 50rpx;
-  height: 50rpx;
+  width: 40rpx;
+  height: 40rpx;
   border-radius: 5%;
   /* margin-left: 85rpx; */
   /* margin-top: 30rpx; */
@@ -98,7 +97,7 @@
   background-color: rgb(252, 243, 253);
 }
 .show{
-  /* margin-top: 16rpx; */
+  margin-top: 16rpx;
   display: flex;
   flex-direction: column;
   background-color:white;
@@ -110,17 +109,8 @@
   background-color:white;
 }
 .show-detail{
-  height: 300rpx;
+  height: 800rpx;
   margin-left: 25rpx;
   margin-right: 25rpx;
-  background-color:white;
-}
-.usermotto {
-  margin-top: 200px;
-}
-.navigator-hover {
-  color:rgb(207, 204, 204);
-}
-.other-navigator-hover {
-  color:red;
+  background-color: #eee;
 }

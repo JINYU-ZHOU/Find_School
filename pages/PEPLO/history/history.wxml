@@ -1,0 +1,40 @@
+<view class="cu-timeline">
+  <view class="cu-time">06-21</view>
+  <view class="cu-item">
+    <view class="content">
+      <text>01:30</text> 【喵星】 MX-78542已揽收，准备发往银河系
+    </view>
+  </view>
+</view>
+<view class="cu-timeline">
+  <view class="cu-time">06-20</view>
+  <view class="cu-item">
+    <view class="content">
+      <text>01:30</text> 【喵星】 MX-12345 已揽收，准备发往银河系
+    </view>
+  </view>
+</view>
+<view class="cu-timeline">
+  <view class="cu-time">06-19</view>
+  <view class="cu-item">
+    <view class="content">
+      <text>07:30</text> 【喵星】 MX-12138 已揽收，准备发往银河系
+    </view>
+  </view>
+</view>
+<view class="cu-timeline">
+  <view class="cu-time">06-18</view>
+  <view class="cu-item">
+    <view class="content">
+      <text>02:30</text> 【喵星】 MX-22222已揽收，准备发往银河系
+    </view>
+  </view>
+</view>
+<view class="cu-timeline">
+  <view class="cu-time">06-17</view>
+  <view class="cu-item">
+    <view class="content">
+      <text>01:30</text> 【喵星】 MX-11111已揽收，准备发往银河系
+    </view>
+  </view>
+</view>
