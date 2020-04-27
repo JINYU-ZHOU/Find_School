@@ -1,21 +1,20 @@
-<view>我的信息修改</view>
-	<view class="cu-form-group margin-top">
-		<view class="title">身份</view>
-		<picker bindchange="PickerChange" value="{{index_shenfen}}" range="{{picker}}">
-			<view class="picker">
-				{{index_shenfen?picker[index_shenfen]:'请选择'}}
-			</view>
-		</picker>
-	</view>
-  	<view class="cu-form-group margin-top">
-		<view class="title">所属院系</view>
-		<picker bindchange="PickerChange1" value="{{index_xueyuan}}" range="{{picker1}}">
-			<view class="picker">
-				{{index_xueyuan?picker1.name[index_xueyuan]:'请选择'}}
-			</view>
-		</picker>
-	</view>
-  <view class="cu-bar btn-group">
-    <!-- <button class="cu-btn bg-green shadow-blur round lg">保存</button> -->
-    <button class="cu-btn bg-blue shadow-blur round">提交</button>
+<view class="touxiang" style="margin-top:16rpx;">
+<navigator class="touxiang-else"url="/pages/PEPLO/MYSET/" hover-class="navigator-hover">
+        <text>我的身份</text>
+        <text>{{picker[0]}}</text>
+    </navigator>
+  </view>
+
+<view class="touxiang">
+<navigator class="touxiang-else"url="/pages/PEPLO/MYSET/id-set/id-set" hover-class="navigator-hover">
+        <text>我的昵称</text>
+        <text>{{userInfo.nickName}}</text>
+    </navigator>
+  </view>
+
+<view class="touxiang">
+<navigator class="touxiang-else"url="/pages/PEPLO/MYSET/xueyue-set/xueyue-set" hover-class="navigator-hover">
+        <text>所属学院</text>
+        <text>{{my_xueyuan}}</text>
+    </navigator>
   </view>

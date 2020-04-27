@@ -67,6 +67,5 @@ App({
     userInfo: null,
     picker_shenfen: '学生',
     picker_xueyuan: '计算机信息与工程学院',
-   
   }
 })
