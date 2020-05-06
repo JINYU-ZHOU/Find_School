@@ -18,7 +18,7 @@ import {
   BasicUrl
 } from '../config/index.js';
 
-function $res(url, method , data) {
+function $res(url, method , data , header) {
 
   wx.showLoading({
     title: '加载中...',
@@ -29,6 +29,7 @@ function $res(url, method , data) {
       url: url.startsWith("http") ? url : BasicUrl + url,
       method,
       data,
+      header,
       success: (res => {
         resolve(res.data)
       }),
@@ -42,20 +43,20 @@ function $res(url, method , data) {
   })
 }
 
-export function $get(url , data) {
-  return $res(url, 'Get' , data)
+export function $get(url , data , header) {
+  return $res(url, 'Get' , data , header)
   // pro.then(res => {
   //   console.log(res)
   // })
 }
 
 
-export function $post(url , data) {
-  return $request(url, 'POST' , data)
-  let pro = $request(url, 'POST')
-  pro.then(res => {
-    console.log(res)
-  })
+export function $post(url , data , header) {
+  return $res(url, 'POST' , data , header)
+  // let pro = $request(url, 'POST')
+  // pro.then(res => {
+  //   console.log(res)
+  // })
 }
 
 

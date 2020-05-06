@@ -13,9 +13,8 @@
 }
 .search_item{
   width: 100%;
-  margin: 0rpx 14rpx ;
   padding-top: 4rpx; 
-  padding-left: 160rpx;
+  padding-left: 40rpx;
   /* height: 59rpx; */
   display: flex;
   flex-direction: row;
@@ -65,7 +64,7 @@
 }
 .select-view-text{
   margin-left: 50rpx;
-  background-color: rgb(209, 203, 203);
+  background-color: rgb(203, 209, 209);
   height: 50rpx;
 
 }
@@ -114,3 +113,48 @@
   margin-right: 25rpx;
   background-color: white;
 }
+
+.temp{
+  text-align: center;
+  font-size: 30rpx;
+  line-height:1.4;
+  opacity: 0.4;
+   position: relative;
+}
+.weather-wrapper{
+  background-image: url(http://m.qpic.cn/psc?/V13PT9hC0AsL2N/Ub*4aHxmnNgAqL6c0lJ4K1H56imapVLSLur1MumwQ8CSy7JaYGSk3ksxdJo*Y2eBR1qMj03yxBqggjSa3xjvVdOKbop5bWsEX4iFRmQkXzI!/b&bo=gAJ1BAAAAAARF9M!&rf=viewer_4);
+  position:relative;
+  padding-top: 174rpx;
+  padding-bottom: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.button{
+  margin-top: 250rpx;
+   position: relative;
+}
+.circle{
+   background-color: rgb(249, 249, 250);
+    width: 70px;
+    height: 70px;
+    border: 2 solid hsl(212, 71%, 81%);
+    border-radius: 50px; 
+   font-size:0;
+   opacity:0.04;
+    position: relative;
+}
+.image{
+  top: 20rpx;
+  margin-left: -22rpx;
+   display: flex;
+   width: 135rpx;
+    height: 135rpx;
+}
+ .cu-dialog {
+   width: 350rpx;
+  height: 350rpx;
+   position: relative;
+
+}
+
+

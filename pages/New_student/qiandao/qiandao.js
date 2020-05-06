@@ -5,10 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-    profession: "计算机与信息工程学院"
+    profession: "内蒙古自治区呼和浩特市内蒙古农业大学",
 
   },
-
+  onclick:function(e){
+    wx.showModal({
+      title: '签到成功',
+      content: '请及时领取物品',
+      showCancel:false,
+      success(res) {
+        if (res.confirm) {
+          console.log('用户点击确定')
+        } 
+      }
+    })
+    
+  },
   /**
    * 生命周期函数--监听页面加载
    */

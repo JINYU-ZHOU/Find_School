@@ -5,8 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-    profession: "计算机与信息工程学院"
+    profession: "计算机与信息工程学院",
+    picker: ['男', '女'],
 
+  },
+  PickerChange(e) {
+    console.log(e);
+    this.setData({
+      index: e.detail.value
+    })
+  },
+  showModal(e) {
+    this.setData({
+      modalName: e.currentTarget.dataset.target
+    })
+  },
+  hideModal(e) {
+    this.setData({
+      modalName: null
+    })
   },
 
   /**

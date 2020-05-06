@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/New_student/New_student",
+    "pages/New_student/New_student/New_student",
+    "pages/School_find/School_find",
     "pages/New_student/get/get",
     "pages/New_student/qiandao/qiandao",
     "pages/New_student/zhuce/zhuce",
@@ -8,11 +9,11 @@
     "pages/PEPLO/my_information/my_information",
     "pages/PEPLO/history/history",
     "pages/PEPLO/notes/notes",
-    "pages/School_find/School_find",
     "pages/test/test",
     "pages/login/login"
 
   ],
+
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -28,7 +29,7 @@
       {
         "selectedIconPath": "images/首页.png",
         "iconPath": "images/首页1.png",
-        "pagePath": "pages/New_student/New_student",
+        "pagePath": "pages/New_student/New_student/New_student",
         "text": "新生指引"
       },
         {
@@ -53,7 +54,9 @@
     }
   },
   "usingComponents": {
-    "cu-custom": "/colorui/components/cu-custom"
+    "cu-custom": "/colorui/components/cu-custom",
+    "van-button": "colorui/components/vant/button/index" ,
+    "van-dialog": "colorui/components/vant/dialog/index"   
   },
   "plugins": {
     "chooseLocation": {

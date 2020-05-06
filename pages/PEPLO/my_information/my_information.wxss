@@ -44,3 +44,10 @@
   margin-bottom: 17rpx;
   justify-content: space-between;
 }
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}

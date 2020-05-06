@@ -1,13 +1,8 @@
 // pages/mysclool/myscool.js
 
 import {
-  $get
+  $post
 } from '../../utils/requestbasic.js';
-
-import {
-  $getsearch
-} from '../../utils/requestsearch.js';
-
 
 Page({
   data: {
@@ -50,19 +45,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // this.getWord();
+    this.getWord();
   },
 
-  // async getWord() {
-  //   let res = await $get("/selhot");
-  //   console.log(res)
-  //   this.setData({
-  //     palce_list: res.selhot
-  //   })
-  // },
+  async getWord() {
+    let res = await $post("/selhot");
+    console.log(res)
+    this.setData({
+      palce_list: res.selhot
+    })
+  },
 
   // async getName(e) {
-  //   let res = await $getsearch("/selWords", {
+  //   let res = await $post("/selhot", {
   //     name: e.detail.value
   //   });
   //   console.log(res.selwords)

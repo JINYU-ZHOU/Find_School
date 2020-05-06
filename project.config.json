@@ -5,7 +5,7 @@
 	},
 	"setting": {
 		"urlCheck": true,
-		"es6": true,
+		"es6": false,
 		"enhance": true,
 		"postcss": true,
 		"preloadBackgroundData": false,
@@ -60,13 +60,6 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "pages/New_student/New_student",
-					"pathName": "pages/New_student/New_student",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
 					"name": "pages/School_find/School_find",
 					"pathName": "pages/School_find/School_find",
 					"query": "",
@@ -76,6 +69,13 @@
 					"id": -1,
 					"name": "pages/PEPLO/my_information/my_information",
 					"pathName": "pages/PEPLO/my_information/my_information",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/New_student/New_student/New_student",
+					"pathName": "pages/New_student/New_student/New_student",
 					"query": "",
 					"scene": null
 				}

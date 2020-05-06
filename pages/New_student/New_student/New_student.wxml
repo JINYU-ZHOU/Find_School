@@ -1,0 +1,70 @@
+<!--pages/mysclool/myscool.wxml-->
+<view class="container">
+	<view class="search">
+		<view class="search_item" bindtap="select_xueyuan">
+			<image style="width:44rpx; height:45rpx;margin-left:8rpx;" src="/images/location.png"></image>
+			<view class="input_coding" space="ensp">
+				[ {{classes}} ]
+			</view>
+		</view>
+	</view>
+	<!-- <view class="select-profession"><view class="select-profession-text" space="ensp">您所在的学院： [ {{profession}} ]</view></view> -->
+	<image src="/images/new.jpg" style="width:100%;height:550rpx;"></image>
+
+	<view class="cu-item text-gley" style="margin-top:2rpx;">
+		<view class="bg-gley shadow-blur content" style="padding-top:17rpx;">
+			<view class="cu-list menu-avatar radius">
+				<view class="cu-item">
+					<navigator class="select-view" url="/pages/New_student/qiandao/qiandao" hover-class="navigator-hover">
+						<view class="cu-avatar round lg" style="background-image:url(http://m.qpic.cn/psc?/V13PT9hC0AsL2N/Ub*4aHxmnNgAqL6c0lJ4K4kcXusJzag2ZiMFArqgzFt2OfzcMtSEzKDbVWgT*baSBHKTuTVBqPNw8GOR8Vz2FfOCWMjnyyhs1tBKb.gABKA!/b&bo=yADIAAAAAAADFzI!&rf=viewer_4;">
+						</view>
+						<view class="content">
+							<view class="text-grey">签到</view>
+							<view class="text-gray text-sm">
+								点击头像快来签到</view>
+						</view>
+					</navigator>
+					<view class="action">
+						<view class="text-grey text-xs">第一步</view>
+						<view class="cu-tag round bg-grey sm">1</view>
+
+					</view>
+				</view>
+
+				<view class="cu-item" style="margin-top:2rpx;">
+					<navigator class="select-view" url="/pages/New_student/get/get" hover-class="navigator-hover">
+						<view class="cu-avatar round lg" style="background-image:url(http://m.qpic.cn/psc?/V13PT9hC0AsL2N/u0qUMsilGdkhXscKj.lHLj0XK4uHj9EI11EmkzKYDYK4bj.Mu0Ifv1z76znQJ2AhyLuh.HscM5Ahl3g8UbU8Fw!!/b&bo=yADIAAAAAAADByI!&rf=viewer_4);">
+
+
+
+						</view>
+						<view class="content">
+							<view class="text-grey">领取</view>
+							<view class="text-gray text-sm">
+								点击头像领取物品吧</view>
+						</view>
+					</navigator>
+					<view class="action">
+						<view class="text-grey text-xs">第二步</view>
+						<view class="cu-tag round bg-grey sm">2</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+
+	<view class="show">
+		<view class="show_daohang">给新生的小建议</view>
+		<view class="list">
+			<block wx:for="{{palce_list}}" wx:for-index="idx">
+				<view class="list_topic">
+					<!--<text space="ensp" > {{idx+1}} {{item.words}}</text>-->
+					<text space="ensp" > {{idx+1}} {{item.name}}</text>
+				</view>
+			</block>
+		</view>
+	</view>
+
+
+</view>

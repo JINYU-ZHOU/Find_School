@@ -1,6 +1,6 @@
 {
-  "navigationBarTitleText": "内农大欢迎你",
-  "navigationBarBackgroundColor": "#bad",
+  "navigationBarTitleText": "签到",
+  "navigationBarBackgroundColor": "#366DC0",
   "navigationBarTextStyle": "white",
   "usingComponents": {}
 }

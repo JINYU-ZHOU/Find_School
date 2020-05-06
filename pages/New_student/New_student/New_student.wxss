@@ -1,0 +1,81 @@
+/* pages/mysclool/myscool.wxss */
+.container-new {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(221, 198, 235);
+} 
+.search{
+  width: 100%;
+  height: 80rpx;
+  margin-top: 2rpx;
+  /* margin-bottom: 10rpx; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color:rgb(221, 198, 235);
+  /* padding-left: 180rpx; */
+}
+.search_item{
+  width: 100%;
+  margin: 0rpx 14rpx ;
+  padding-top: 4rpx; 
+  padding-left: 160rpx;
+  /* height: 59rpx; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color:  #eee;
+  opacity:0.5;
+}
+.input_coding{
+  height: 60rpx;
+  margin-top: 10rpx;
+  margin-left: 28rpx;
+ 
+}
+.select-view{
+  width: 100%;
+  height: 120rpx;
+  /* margin-top: 10rpx; */
+  display: flex;
+  flex-direction: column;
+  background-color:white;
+  margin-left: 30rpx;
+}
+
+.select-view-text{
+  margin-left: 50rpx;
+  background-color: rgb(209, 203, 203);
+  height: 50rpx;
+
+}
+
+.show{
+   margin-top: 16rpx; 
+  display: flex;
+  flex-direction: column;
+  background-color:white;
+}
+.show_daohang{
+  width: 100%;
+  height: 60rpx;
+  padding-left: 45rpx;
+  padding-top: 8rpx;
+  background-color:white;
+}
+.list{
+  margin-top: 2rpx;
+}
+.list_topic{
+  /* background-color: #bad; */
+  margin-top: 2rpx;
+  /* margin-left: 55rpx; */
+  padding-left: 45rpx;
+  width: 100%;
+  height: 120rpx;
+  background-color: rgb(221, 198, 235);
+  opacity:0.75;
+  padding-top: 40rpx;
+}

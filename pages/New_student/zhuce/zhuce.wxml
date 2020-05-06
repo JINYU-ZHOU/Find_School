@@ -1,49 +1,58 @@
-<!--pages/mysclool/myscool.wxml-->
 <view class="container">
-<view class="search">
-		<view class="search_item">
-    <image style="width:44rpx; height:45rpx;margin-left:8rpx;" src="/images/location.png"></image>
-        <view class="input_coding" space="ensp">
-        
-        [ {{profession}} ]</view>
-        </view>
-		
+<view class='weather-wrapper'>
+<view class="cu-form-group margin-top" style="margin-top:100rpx;">
+		<view class="title">姓名</view>
+		<input placeholder="你的姓名"></input>
 	</view>
-
-<!-- <view class="select-profession"><view class="select-profession-text" space="ensp">您所在的学院： [ {{profession}} ]</view></view> -->
-<image src="/images/new.jpg" style="width:100%;height:540rpx;"></image>
-  
-	<view class="select">
-		<view class="select-view">
-    <image src="/images/qiandao.png" class="select-image" bindtap="qiandao"></image>
-			<view class="select-view-bottom">
-      <image src="/images/1.png" class="select-image-icon"></image><text class="select-text">签到</text>
-		</view>
-    </view>
-   <view class="select-view">
-    <image src="/images/zhuce.png" class="select-image"></image>
-			<view class="select-view-bottom">
-      <image src="/images/2.png" class="select-image-icon"></image><text class="select-text">注册</text>
-		</view>
-    </view>
-    <view class="select-view">
-    <image src="/images/lingqu.png" class="select-image"></image>
-			<view class="select-view-bottom">
-      <image src="/images/3.png" class="select-image-icon"></image><text class="select-text">领取物品</text>
-		</view>
-    </view>
+  	<view class="cu-form-group ">
+		<view class="title">性别</view>
+		<picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+			<view class="picker">
+				{{index?picker[index]:'女'}}
+			</view>
+		</picker>
 	</view>
-
-      
-	<view class="show">
-		<view class="show_daohang">详情数据</view>
-    <view class="show-detail">zhuce</view>
+  	<view class="cu-form-group">
+		<view class="title">手机号码</view>
+		<input placeholder=" "></input>
+		<view class="cu-capsule radius">
+			<view class="cu-tag bg-blue">
+				+86
+			</view>
+			<view class="cu-tag line-blue">
+				中国大陆
+			</view>
+		</view>
+	</view>
+  <view class="cu-bar btn-group">
+    <button class="cu-btn bg-blue shadow-blur round">注册</button>
   </view>
+<view class="cu-bar bg-white margin-top">
+  <view class="action">
+    <text class="cuIcon-title text-orange "></text> 普通窗口
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-green shadow" bindtap="showModal" data-target="Modal">Modal</button>
+  </view>
+</view>
+<view class="cu-modal {{modalName=='Modal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">Modal标题</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      Modal 内容。
+    </view>
+  </view>
+</view>
 
 
 
 
 
 
-
+	</view>
 </view>

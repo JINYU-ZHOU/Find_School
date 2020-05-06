@@ -114,3 +114,89 @@
   margin-right: 25rpx;
   background-color: #eee;
 }
+
+
+.temp{
+  text-align: center;
+  font-size: 30rpx;
+  line-height:1.4;
+  opacity: 0.4;
+}
+.weather{
+  text-align: center;
+  font-size:40rpx;
+  line-height:1.4;
+  opacity:0.65;
+}
+.weather-wrapper{
+  background-image: url(http://m.qpic.cn/psc?/V13PT9hC0AsL2N/Ub*4aHxmnNgAqL6c0lJ4K1H56imapVLSLur1MumwQ8CSy7JaYGSk3ksxdJo*Y2eBR1qMj03yxBqggjSa3xjvVdOKbop5bWsEX4iFRmQkXzI!/b&bo=gAJ1BAAAAAARF9M!&rf=viewer_4);
+  position:relative;
+  padding-top: 174rpx;
+  padding-bottom: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.button{
+  margin-top: 250rpx;
+}
+.circle{
+   background-color: rgb(249, 249, 250);
+    width: 70px;
+    height: 70px;
+    border: 2 solid hsl(212, 71%, 81%);
+    border-radius: 50px; 
+   font-size:0;
+   opacity:0.04;
+}
+.image{
+  top: 20rpx;
+  margin-left: -22rpx;
+   display: flex;
+   width: 135rpx;
+    height: 135rpx;
+}
+.cu-dialog {
+/* position: relative;
+display: inline-block; */
+vertical-align: middle;
+margin-left: auto;
+margin-right: auto;
+width: 680rpx;
+max-width: 100%;
+background-color: #f8f8f8;
+border-radius: 10rpx;
+overflow: hidden;
+
+}
+.cu-modal.show {
+opacity: 1;
+transition-duration: 0.3s;
+-ms-transform: scale(1);
+transform: scale(1);
+overflow-x: hidden;
+overflow-y: auto;
+pointer-events: auto;
+
+}
+.cu-modal {
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 1110;
+opacity: 0;
+outline: 0;
+text-align: center;
+-ms-transform: scale(1.185);
+transform: scale(1.185);
+backface-visibility: hidden;
+perspective: 2000rpx;
+background: rgba(0, 0, 0, 0.6);
+transition: all 0.3s ease-in-out 0s;
+pointer-events: none;
+
+}
+
+
+ 

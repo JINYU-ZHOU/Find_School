@@ -8,13 +8,16 @@
 <view class="touxiang">
 	<navigator class="touxiang-else" url="/pages/PEPLO/MYSET/id-set/id-set" hover-class="navigator-hover">
 		<text>我的昵称</text>
-		<text>{{userInfo.nickName}}</text>
+		<text>{{name}}</text>
 	</navigator>
 </view>
 
 <view class="touxiang">
-	<navigator class="touxiang-else" url="/pages/PEPLO/MYSET/xueyue-set/xueyue-set?xueyuan={{my_xueyuan}}" hover-class="navigator-hover">
+	<view class="touxiang-else" bindtap="selectXue" hover-class="navigator-hover">
 		<text>所属学院</text>
 		<text>{{my_xueyuan}}</text>
-	</navigator>
+	</view>
+</view>
+<view class="btn">
+	<van-button block bind:click="backHome" color="#bbaadd" plain  type="primary">返回首页</van-button>
 </view>

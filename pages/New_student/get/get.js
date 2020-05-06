@@ -5,8 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-    profession:"计算机与信息工程学院"
+    
+    profession:"学生公寓D座门口"
 
+  },
+  showModal(e) {
+    wx.previewImage({
+      current: '', // 当前显示图片的http链接
+      urls: ['http://m.qpic.cn/psc?/V13PT9hC0AsL2N/u0qUMsilGdkhXscKj.lHLgkykNhwb4q8k4bbKo*Z7sMfNGfelm1CQJ3Vt*Qozw2AfUa*pm3hao6QP.g4Oh7W4w!!/b&bo=bAPzBAAAAAADB7o!&rf=viewer_4']// 需要预览的图片http链接列表
+    })
+    
+  },
+  hideModal(e) {
+    this.setData({
+      modalName: null
+    })
   },
 
   /**

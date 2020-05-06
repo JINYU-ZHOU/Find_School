@@ -4,7 +4,7 @@
 所有以list为返回值的接口，其json标签名均为接口名
 所有返回是，否等判断信息的接口，均为1为成功，0为失败
 后台接口信息：
-后台接口域名：https://spergol
+后台接口域名：https://spergol.com
 
 
 **用户登录与注册：/login
@@ -43,13 +43,13 @@ json数据：username，classes，identity
 返回值：null
 
 
-**地点热词查询：/selMaps
+**地点热词查询（返回导航信息经纬度）：/selMaps
 必传参数：words
 返回值：确定地点
 json数据：location
 
 
-**热词模糊查询：/selWords
+**热词模糊查询（联想框搜索）：/selWords
 必传参数：name
 返回值：模糊查询热词list
 
@@ -58,6 +58,6 @@ json数据：location
 必传参数：name
 返回值：null
 
-**按热度排序：/selhot
+**按热度排序（实时更新热搜地名的接口）：/selhot
 必传参数：null
 返回值：热度排序list

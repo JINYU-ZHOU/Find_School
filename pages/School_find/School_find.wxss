@@ -91,6 +91,7 @@
   width: 100%;
   height: 60rpx;
   padding-left: 45rpx;
+  padding-top: 8rpx;
   background-color:white;
 }
 .list{

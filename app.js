@@ -12,6 +12,7 @@ App({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         code = res.code
+        console.log("登录",res)
       }
     })
     // 获取用户信息
@@ -41,16 +42,11 @@ App({
                 data: {
                   code: code,
                   username: res.userInfo.nickName,
-                  //这里设置一下登录弹窗，选择所在专业
-                  classes: '计算机与信息工程学院',
                   //身份默认学生
-                  identify: '1',
-                  //授权码，仅在老师注册时生效
-                  password: '123456'
-
+                  identify: '0',
                 },
                 success: (a) => {
-                  console.log(a.data)
+                  console.log("返回值"+a.data)
                   if (a && a.header && a.header['Set-Cookie']) {
                     wx.setStorageSync('cookieKey', a.header['Set-Cookie']);//保存Cookie到Storage
 
@@ -66,6 +62,6 @@ App({
   globalData: {
     userInfo: null,
     picker_shenfen: '学生',
-    picker_xueyuan: '计算机信息与工程学院',
+    picker_xueyuan: '',
   }
 })

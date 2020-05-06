@@ -1,33 +1,39 @@
+import {
+  $post
+} from "../../../../utils/requestbasic";
+
 var app = getApp();
 Page({
-  data:{
-    my_xueyuan: app.globalData.picker_xueyuan,
-    picker: ['学生', '老师'],
-    picker1: ['计算机与信息工程学院', '动物科学学院', '兽医学院', '农学院', '林学院', '草原与资源环境学院', '沙漠治理学院', '机电工程学院', '水利与土木建筑学院', '材料科学与艺术学院', '积极管理学院', '食品科学与工程学院', '生命科学学院', '人文社会科学学院', '外国语学院',],
+  data: {
+    name:""
   },
-  
-  onLoad:function(){
-},
-   PickerChange(e) {
-    console.log(e);
-      this.setData({
-        index_xueyuan: app.globalData.picker.detail.value
-      })
-  },
-  PickerChange1(e) {
-    console.log(e);
+
+  onLoad: function () {},
+
+
+  input(e) {
     this.setData({
-      index_xueyuan: e.detail.value
+      name: e.detail.value
     })
   },
-  clickFun:function(){
-    app.globalData.picker_xueyuan='hhhh'
-  },
-  onShow: function () {
-    this.setData({
-      my_xueyuan: app.globalData.picker_xueyuan
+
+  updateName() {
+    this.updateNamehou()
+    wx.navigateTo({
+      url: '../../my_information/my_information',
     })
+  },
+
+  async updateNamehou() {
+    let name = this.data.name
+    let res = await $post('https://spergol.com/changeUser', {
+      username: name
+    }, {
+      'content-Type': 'application/x-www-form-urlencoded',
+      'Cookie': wx.getStorageSync('cookieKey')
+    })
+    console.log("修改昵称信息 的接口的返回值：-----", res)
   }
 
- 
+
 })
