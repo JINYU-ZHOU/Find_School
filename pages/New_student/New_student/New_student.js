@@ -37,7 +37,7 @@ Page({
 
   select_xueyuan() {
     console.log("xueyuan")
-    wx.navigateTo({
+    wx.redirectTo({
       url: '../../PEPLO/my_information/my_information',
       complete: (res) => {},
       fail: (res) => {},
@@ -54,12 +54,12 @@ Page({
   },
 
   async selectXuYuan() {
-    let res = await $post ('https://spergol.com/seluser', {}, {
+    let res = await $post('https://spergol.com/seluser', {}, {
       'content-Type': 'application/x-www-form-urlencoded',
       'Cookie': wx.getStorageSync('cookieKey')
     })
-   console.log("数据",res)
-    if (res.user.classes !== "" && res.user.classes !== null) {
+
+    if (res.user.classes !== "") {
       this.setData({
         classes: res.user.classes
       })

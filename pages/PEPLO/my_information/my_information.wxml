@@ -13,10 +13,10 @@
 </view>
 
 <view class="touxiang">
-	<view class="touxiang-else" bindtap="selectXue" hover-class="navigator-hover">
+	<navigator class="touxiang-else" url="/pages/PEPLO/MYSET/xueyue-set/xueyue-set?xueyuan={{my_xueyuan}}" hover-class="navigator-hover" open-type="redirect">
 		<text>所属学院</text>
 		<text>{{my_xueyuan}}</text>
-	</view>
+	</navigator>
 </view>
 <view class="btn">
 	<van-button block bind:click="backHome" color="#bbaadd" plain  type="primary">返回首页</van-button>

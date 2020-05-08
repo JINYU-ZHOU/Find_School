@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/New_student/New_student/New_student",
     "pages/School_find/School_find",
     "pages/New_student/get/get",
@@ -9,8 +10,7 @@
     "pages/PEPLO/my_information/my_information",
     "pages/PEPLO/history/history",
     "pages/PEPLO/notes/notes",
-    "pages/test/test",
-    "pages/login/login"
+    "pages/test/test"
 
   ],
 
@@ -55,8 +55,7 @@
   },
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom",
-    "van-button": "colorui/components/vant/button/index" ,
-    "van-dialog": "colorui/components/vant/dialog/index"   
+    "van-button": "colorui/components/vant/button/index"    
   },
   "plugins": {
     "chooseLocation": {

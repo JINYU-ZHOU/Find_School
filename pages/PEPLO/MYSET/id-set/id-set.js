@@ -1,7 +1,6 @@
 import {
   $post
-} from "../../../../utils/requestbasic";
-
+} from '../../../../utils/requestbasic.js'
 var app = getApp();
 Page({
   data: {
@@ -9,30 +8,33 @@ Page({
   },
 
   onLoad: function () {},
+ 
+  onShow: function () {
+   
+  },
 
-
-  input(e) {
+  inputName(e){
+    console.log(e.detail)
     this.setData({
-      name: e.detail.value
+      name:e.detail.value
     })
   },
 
-  updateName() {
-    this.updateNamehou()
+  setname(){
+    this.selectName()
     wx.navigateTo({
       url: '../../my_information/my_information',
     })
   },
 
-  async updateNamehou() {
-    let name = this.data.name
+  async selectName(){
     let res = await $post('https://spergol.com/changeUser', {
-      username: name
+      username: this.data.name
     }, {
       'content-Type': 'application/x-www-form-urlencoded',
       'Cookie': wx.getStorageSync('cookieKey')
     })
-    console.log("修改昵称信息 的接口的返回值：-----", res)
+    console.log("修改信息 的接口的返回值：-----", res)
   }
 
 

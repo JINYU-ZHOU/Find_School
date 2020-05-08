@@ -1,11 +1,22 @@
 <view class='weather-wrapper'>
+
 	<view class="search_item">
-		<image style="width:44rpx; height:45rpx;margin-left:20rpx;" src="/images/location.png" />
-		<view class="input_coding" style="margin-left:45rpx;" space="ensp">
-			[ {{profession}} ]</view>
-	</view>
-	<view class="button">
-		<button bindtap="showModal" class="circle"></button>
-	</view>
-	<view class="temp">点点云朵查看具体位置</view>
+    <image style="width:44rpx; height:45rpx;margin-left:20rpx;" 
+              src="/images/location.png" />
+    <view class="input_coding" style="margin-left:45rpx;" space="ensp">
+        [  {{profession}} ]</view>
+   </view> 
+      
+<view class="button">
+<button  bindtap="showModal"  class="circle"></button>
+</view>
+
+<view class="temp">点点云朵查看具体位置</view>
+
+
+
+
+
+
+
 </view>

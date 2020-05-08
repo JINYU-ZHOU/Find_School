@@ -124,30 +124,7 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
-    }),
-    wx.setStorageSync('username', e.userInfo.nickName)
-      //用户信息后台登录注册并设置cookie
-    wx.request({
-      url: 'https://spergol.com/login',
-      method: 'POST',
-      header: {
-        'content-Type': 'application/x-www-form-urlencoded;charset=utf-8',
-      },
-      data: {
-        code: code,
-        username: res.userInfo.nickName,
-        //身份默认学生
-        identify: '0',
-      },
-      success: (a) => {
-        console.log("返回值"+a.data)
-        if (a && a.header && a.header['Set-Cookie']) {
-          wx.setStorageSync('cookieKey', a.header['Set-Cookie']);//保存Cookie到Storage
-
-        }
-      }
     })
   },
-  
   
 })

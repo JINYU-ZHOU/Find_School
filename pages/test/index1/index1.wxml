@@ -8,9 +8,10 @@
     </block>
     
   </view>
+  
   <view class="people">
       <view class="geren">
-        <text class="geren-text">个人信</text>
+        <text class="geren-text">个人信息</text>
       </view>
       <view class="fuhao">
         <text class="fuhao-text">></text>

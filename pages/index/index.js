@@ -1,4 +1,4 @@
-1//index.js
+//index.js
 //获取应用实例
 const app = getApp()
 
@@ -121,7 +121,7 @@ Page({
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
-      userInfo: e.detail.userInfo,
+      userInfo: app.globalData.userInfo,
       hasUserInfo: true
     })
   }

@@ -1,5 +1,20 @@
 //app.js
+import {
+  $post
+} from '/utils/requestbasic.js'
 App({
+
+  async selectUserInfo() {
+    let res = await $post('https://spergol.com/seluser', {}, {
+      'content-Type': 'application/x-www-form-urlencoded',
+      'Cookie': wx.getStorageSync('cookieKey')
+    })
+    if (res) {
+      this.globalData.flag = true
+    } else {
+      this.globalData.flag = false
+    }
+  },
 
   onLaunch: function () {
     // 展示本地存储能力
@@ -12,7 +27,6 @@ App({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         code = res.code
-        console.log("登录",res)
       }
     })
     // 获取用户信息
@@ -32,27 +46,31 @@ App({
                 //用户名storage
                 wx.setStorageSync('username', res.userInfo.nickName)
               }
-              //用户信息后台登录注册并设置cookie
-              wx.request({
-                url: 'https://spergol.com/login',
-                method: 'POST',
-                header: {
-                  'content-Type': 'application/x-www-form-urlencoded;charset=utf-8',
-                },
-                data: {
-                  code: code,
-                  username: res.userInfo.nickName,
-                  //身份默认学生
-                  identify: '0',
-                },
-                success: (a) => {
-                  console.log("返回值"+a.data)
-                  if (a && a.header && a.header['Set-Cookie']) {
-                    wx.setStorageSync('cookieKey', a.header['Set-Cookie']);//保存Cookie到Storage
+              
+              this.selectUserInfo()
+              if (this.globalData.flag === false) {
+                //用户信息后台登录注册并设置cookie
+                wx.request({
+                  url: 'https://spergol.com/login',
+                  method: 'POST',
+                  header: {
+                    'content-Type': 'application/x-www-form-urlencoded;charset=utf-8',
+                  },
+                  data: {
+                    code: code,
+                    username: res.userInfo.nickName,
+                    //身份默认学生
+                    identify: '1',
+                  },
+                  success: (a) => {
+                    console.log(a.data)
+                    if (a && a.header && a.header['Set-Cookie']) {
+                      wx.setStorageSync('cookieKey', a.header['Set-Cookie']); //保存Cookie到Storage
 
+                    }
                   }
-                }
-              })
+                })
+              }
             }
           })
         }
@@ -63,5 +81,6 @@ App({
     userInfo: null,
     picker_shenfen: '学生',
     picker_xueyuan: '',
+    flag:false
   }
 })

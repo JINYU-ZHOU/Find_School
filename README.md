@@ -43,13 +43,13 @@ json数据：username，classes，identity
 返回值：null
 
 
-**地点热词查询（返回导航信息经纬度）：/selMaps
+**地点热词查询：/selMaps
 必传参数：words
 返回值：确定地点
 json数据：location
 
 
-**热词模糊查询（联想框搜索）：/selWords
+**热词模糊查询：/selWords
 必传参数：name
 返回值：模糊查询热词list
 
@@ -58,22 +58,6 @@ json数据：location
 必传参数：name
 返回值：null
 
-**按热度排序（实时更新热搜地名的接口）：/selhot
+**按热度排序：/selhot
 必传参数：null
 返回值：热度排序list
-
-**查看历史记录：/selHistory
-返回值：history
-
-**添加笔记：/addnote
-可选参数：message（文字信息）
-          图片信息
-返回值：code
-
-**查看笔记：/selnote
-返回值：note
-
-**删除笔记：
-可选参数：message（文字信息内容）
-        image（图片信息路径）
-返回值：code
