@@ -61,3 +61,19 @@ json数据：location
 **按热度排序（实时更新热搜地名的接口）：/selhot
 必传参数：null
 返回值：热度排序list
+
+**查看历史记录：/selHistory
+返回值：history
+
+**添加笔记：/addnote
+可选参数：message（文字信息）
+          图片信息
+返回值：code
+
+**查看笔记：/selnote
+返回值：note
+
+**删除笔记：
+可选参数：message（文字信息内容）
+        image（图片信息路径）
+返回值：code
