@@ -61,3 +61,20 @@ json数据：location
 **按热度排序：/selhot
 必传参数：null
 返回值：热度排序list
+
+
+**路径规划
+  onShow: function () {
+  let plugin = requirePlugin('routePlan');
+
+    let endPoint = JSON.stringify({  //终点
+        'name': '吉野家(北京西站北口店)',
+        'latitude': 39.896 ,
+        'longitude': 116.323
+    });
+    wx.navigateTo({
+        url: 'plugin://routePlan/index?key=' + key + '&referer=' + referer + '&endPoint=' + endPoint + '&navigation=' + 1
+    });
+
+   
+  },*/
