@@ -1,0 +1,6 @@
+.text{
+  margin-top: 700rpx;
+  color: rgb(197, 197, 197);
+  opacity: 0.5%;
+  text-align: center;
+}

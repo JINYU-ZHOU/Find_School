@@ -5,13 +5,14 @@
 	},
 	"setting": {
 		"urlCheck": true,
-		"es6": true,
+		"es6": false,
 		"enhance": true,
 		"postcss": true,
 		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
+		"nodeModules": true,
 		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
@@ -25,7 +26,7 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.10.4",
+	"libVersion": "2.11.0",
 	"appid": "wxa1b202ae01b354d3",
 	"projectname": "%E6%A0%A1%E5%9B%AD%E5%AF%BC%E8%88%AA",
 	"debugOptions": {
@@ -77,6 +78,54 @@
 					"name": "pages/New_student/New_student/New_student",
 					"pathName": "pages/New_student/New_student/New_student",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/School_find/Search/Search",
+					"pathName": "pages/School_find/Search/Search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/test/test",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/test/test",
+					"pathName": "pages/test/index1/index1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/test/index1/index1",
+					"pathName": "pages/test/index1/index1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/School_find/east-area/east-area",
+					"pathName": "pages/School_find/east-area/east-area",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/School_find/new-area/new-area",
+					"pathName": "pages/School_find/new-area/new-area",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/School_find/Search/Search",
+					"pathName": "pages/School_find/Search/Search",
 					"scene": null
 				}
 			]

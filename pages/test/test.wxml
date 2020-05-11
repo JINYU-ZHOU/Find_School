@@ -6,3 +6,6 @@
     <view>地址：{{address}}</view>  
     <view>城市：{{cityInfo.city}}</view>  
 </view>
+
+
+<navigator url="../map/map">我的</navigator>

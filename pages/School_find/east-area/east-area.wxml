@@ -1,0 +1,7 @@
+<view class="top">
+	<view class="center" wx:for="{{location}}">
+		<view class="cent">
+			<view class="item">{{item}}</view>
+		</view>
+	</view>
+</view>

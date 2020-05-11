@@ -11,6 +11,7 @@ Page({
   data: {
     userInfo: [],
     code: '',
+    name:"",
     flag: false
   },
 
@@ -83,7 +84,15 @@ Page({
 
       this.selectUserInfo()
       if (this.data.flag === false) {
+        console.log("点击授权后打印的name的值",this.data.userInfo.nickName)
+        this.setData({
+          name: this.data.userInfo.nickName
+        })
         //用户信息后台登录注册并设置cookie
+        let name = this.data.name;
+        console.log("name的值=======：",name)
+        console.log("name的值=======：","金宝今天努力了吗")
+        //decodeURI()
         wx.request({
           url: 'https://spergol.com/login',
           method: 'POST',
@@ -92,7 +101,7 @@ Page({
           },
           data: {
             code: this.data.code,
-            username: this.data.userInfo.nickName,
+            username: name,
             //身份默认学生
             identify: '1',
           },

@@ -1,0 +1,23 @@
+page{
+  background-color: #f7f7f7;
+}
+
+.top{
+  margin-top: 50rpx;
+  width: 100%;
+}
+
+.center{
+  margin-top: 50rpx;
+}
+
+.cent{
+  background-color: #fff;
+}
+
+.item{
+  margin-left: 8%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}

@@ -1,4 +1,3 @@
-// pages/mysclool/myscool.js
 import {
   $post
 } from '../../../utils/requestbasic.js'
@@ -75,7 +74,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    
   },
 
   /**

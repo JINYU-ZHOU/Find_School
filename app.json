@@ -1,8 +1,13 @@
 {
   "pages": [
+
     "pages/login/login",
-    "pages/New_student/New_student/New_student",
     "pages/School_find/School_find",
+    "pages/New_student/New_student/New_student",
+    "pages/School_find/Search/Search",
+    "pages/School_find/west-area/west-area",
+    "pages/School_find/new-area/new-area",
+    "pages/School_find/east-area/east-area",
     "pages/New_student/get/get",
     "pages/New_student/qiandao/qiandao",
     "pages/New_student/zhuce/zhuce",
@@ -10,7 +15,9 @@
     "pages/PEPLO/my_information/my_information",
     "pages/PEPLO/history/history",
     "pages/PEPLO/notes/notes",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/test/index1/index1",
+    "pages/map/map"
 
   ],
 
@@ -25,29 +32,28 @@
     "color": "black",
     "selectedColor": "#754775",
     "borderStyle": "black",
-    "list": [
-      {
+    "list": [{
         "selectedIconPath": "images/首页.png",
         "iconPath": "images/首页1.png",
         "pagePath": "pages/New_student/New_student/New_student",
         "text": "新生指引"
       },
-        {
-          "selectedIconPath": "images/find.png",
-          "iconPath": "images/find1.png",
-          "pagePath": "pages/School_find/School_find",
-          "text": "校园指路"
-        },
+      {
+        "selectedIconPath": "images/find.png",
+        "iconPath": "images/find1.png",
+        "pagePath": "pages/School_find/School_find",
+        "text": "校园指路"
+      },
       {
         "selectedIconPath": "images/user.png",
         "iconPath": "images/user1.png",
         "pagePath": "pages/index/index",
         "text": "我的"
       }
-    
+
     ]
   },
-  
+
   "permission": {
     "scope.userLocation": {
       "desc": "你的位置信息将用于小程序定位"
@@ -55,9 +61,15 @@
   },
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom",
-    "van-button": "colorui/components/vant/button/index"    
+    "van-button": "colorui/components/vant/button/index",
+    "van-index-bar": "colorui/components/vant/index-bar/index",
+    "van-index-anchor": "colorui/components/vant/index-anchor/index"
   },
   "plugins": {
+    "routePlan": {
+      "version": "1.0.5",
+      "provider": "wx50b5593e81dd937a"
+    },
     "chooseLocation": {
       "version": "1.0.2",
       "provider": "wx76a9a06e5b4e693e"

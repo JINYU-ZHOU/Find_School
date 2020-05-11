@@ -1,82 +1,89 @@
 // pages/mysclool/myscool.js
-
+let key = 'AHJBZ-NMCYX-UO44G-ZC66D-YMS5V-C7FKB'; //使用在腾讯位置服务申请的key
+let referer = 'test'; //调用插件的app的名称
 import {
-  $get
+  $get,
+  $post
 } from '../../utils/requestbasic.js';
 
 import {
   $getsearch
 } from '../../utils/requestsearch.js';
-
+import {
+  $parseVars2Str
+} from '../../utils/util.js';
+import {
+  $attr
+} from '../../utils/util.js';
 
 Page({
   data: {
     palce: "",
     palce_list_serrch: [],
     checked: false,
-    palce_list: [
-      {name: "图书馆",},
-      {name: "大不同超市",}, 
-      {name: "财务处",},
-      {name: "校园卡管理中心",},
-      {name: "计算机学院",},
-      {name: "勤学楼",},
-    ],
+    palce_list: [],
+    name: ""
   },
 
   /**
    * 页面的初始数据
    */
 
-  palce_set: function (e) {
-
-    console.log("====对象======", e)
-
-    this.setData({
-      palce: e.detail.value
-    })
-//这些注释掉的代码都是我加的，现在的程序和我从仓库拷贝下来的代码没区别
-    // if (this.data.palce.length != 0) {
-    //   this.getName(e);
-    // }
-
-
-    console.log("====palce==", this.data.palce)
-
-  },
-
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // this.getWord();
+
   },
 
-  // async getWord() {
-  //   let res = await $get("/selhot");
-  //   console.log(res)
-  //   this.setData({
-  //     palce_list: res.selhot
-  //   })
-  // },
+  async getWord() {
+    let res = await $get("/selhot");
+    console.log("============", res)
+    this.setData({
+      palce_list: res.selhot
+    })
 
-  // async getName(e) {
-  //   let res = await $getsearch("/selWords", {
-  //     name: e.detail.value
-  //   });
-  //   console.log(res.selwords)
+    console.log(res.selhot)
 
-  //   if(res.selwords){
-  //     !this.data.checked;
-  //   }
 
-  //   this.setData({
-  //     palce: e.detail.value,
-  //     palce_list_serrch: res.selwords
-  //   })
+  },
 
-  // },
+  async selectMap(e) {
+    //跳转地图页面
+    console.log(e.currentTarget.dataset.id)
+    let res = await $post(
+      '/selMaps', {
+        words: this.data.palce_list[e.currentTarget.dataset.id].words
+      }, {
+        'content-Type': 'application/x-www-form-urlencoded',
+        'Cookie': wx.getStorageSync('cookieKey')
+      }
+    )
+    console.log(res)
+
+    this.addhot(e)
+    console.log(res.location)
+    let plugin = requirePlugin('routePlan');
+    let endPoint = JSON.stringify({ //终点
+      'name': res.location.name,
+      'latitude': res.location.latitude,
+      'longitude': res.location.longitude
+    });
+    wx.navigateTo({
+      url: 'plugin://routePlan/index?key=' + key + '&referer=' + referer + '&endPoint=' + endPoint + '&navigation=' + 1
+    });
+  },
+
+  async addhot(e) {
+    console.log("=======----======", this.data.name)
+    let res = await $get(
+      "/hot", {
+        name: this.data.palce_list[e.currentTarget.dataset.id].words,
+      }, {
+        'content-Type': 'application/x-www-form-urlencoded',
+        'Cookie': wx.getStorageSync('cookieKey')
+      })
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -89,7 +96,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.getWord();
   },
 
   /**

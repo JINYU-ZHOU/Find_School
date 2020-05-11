@@ -1,0 +1,22 @@
+{
+  "name": "school_find",
+  "version": "1.0.0",
+  "description": "连接后台需要统一一下appid：wxa1b202ae01b354d3\r 后台接口均经过测试，访问无异常\r 所有以list为返回值的接口，其json标签名均为接口名\r 所有返回是，否等判断信息的接口，均为1为成功，0为失败\r 后台接口信息：\r 后台接口域名：https://spergol.com",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JINYU-ZHOU/Find_School.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JINYU-ZHOU/Find_School/issues"
+  },
+  "homepage": "https://github.com/JINYU-ZHOU/Find_School#readme",
+  "dependencies": {
+    "weui-miniprogram": "^1.0.3"
+  }
+}
